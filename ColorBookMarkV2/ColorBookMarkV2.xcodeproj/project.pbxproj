@@ -13,6 +13,8 @@
 		A45563772BA42CAB00E5A83C /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A45563732BA42CAB00E5A83C /* Pretendard-Medium.otf */; };
 		A455637A2BA42CF900E5A83C /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563792BA42CF900E5A83C /* UIFontExtension.swift */; };
 		A455637B2BA42CF900E5A83C /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563792BA42CF900E5A83C /* UIFontExtension.swift */; };
+		A455637D2BA4305D00E5A83C /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A455637C2BA4305D00E5A83C /* UIColorExtension.swift */; };
+		A455637E2BA4305D00E5A83C /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A455637C2BA4305D00E5A83C /* UIColorExtension.swift */; };
 		A48C03692B8AE83000690A10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48C03682B8AE83000690A10 /* AppDelegate.swift */; };
 		A48C036B2B8AE83000690A10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48C036A2B8AE83000690A10 /* SceneDelegate.swift */; };
 		A48C03722B8AE83000690A10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A48C03712B8AE83000690A10 /* Assets.xcassets */; };
@@ -50,6 +52,7 @@
 		A45563722BA42CAB00E5A83C /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
 		A45563732BA42CAB00E5A83C /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
 		A45563792BA42CF900E5A83C /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		A455637C2BA4305D00E5A83C /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		A48C03652B8AE83000690A10 /* ColorBookMarkV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorBookMarkV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A48C03682B8AE83000690A10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A48C036A2B8AE83000690A10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				A45563792BA42CF900E5A83C /* UIFontExtension.swift */,
+				A455637C2BA4305D00E5A83C /* UIColorExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -353,6 +357,7 @@
 			files = (
 				A48C03692B8AE83000690A10 /* AppDelegate.swift in Sources */,
 				A48C036B2B8AE83000690A10 /* SceneDelegate.swift in Sources */,
+				A455637D2BA4305D00E5A83C /* UIColorExtension.swift in Sources */,
 				A455637A2BA42CF900E5A83C /* UIFontExtension.swift in Sources */,
 				A48C03992B8AE8C900690A10 /* SignInViewController.swift in Sources */,
 			);
@@ -381,6 +386,7 @@
 			files = (
 				A48C039E2B8AF12500690A10 /* AppDelegate.swift in Sources */,
 				A48C039F2B8AF12500690A10 /* SceneDelegate.swift in Sources */,
+				A455637E2BA4305D00E5A83C /* UIColorExtension.swift in Sources */,
 				A455637B2BA42CF900E5A83C /* UIFontExtension.swift in Sources */,
 				A48C03A02B8AF12500690A10 /* SignInViewController.swift in Sources */,
 			);
