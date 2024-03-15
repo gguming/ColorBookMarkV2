@@ -11,6 +11,6 @@ final class SignInViewController: UIViewController {
     
     override func viewDidLoad() {
         
-        view.backgroundColor = .red
+        view.backgroundColor = .gray03
     }
 }
