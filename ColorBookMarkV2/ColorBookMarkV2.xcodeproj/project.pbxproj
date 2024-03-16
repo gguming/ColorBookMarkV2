@@ -125,6 +125,7 @@
 		A455637F2BA5556900E5A83C /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				A45563862BA555F000E5A83C /* SignIn */,
 				A45563812BA5557C00E5A83C /* Common */,
 			);
 			path = Presentation;
@@ -144,6 +145,22 @@
 				A45563832BA555AC00E5A83C /* Coordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		A45563862BA555F000E5A83C /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				A45563872BA5560600E5A83C /* View */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		A45563872BA5560600E5A83C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A48C03982B8AE8C900690A10 /* SignInViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		A48C035C2B8AE83000690A10 = {
@@ -176,7 +193,6 @@
 				A48C039B2B8AE9DF00690A10 /* Resources */,
 				A48C039A2B8AE9D000690A10 /* System */,
 				A48C03732B8AE83000690A10 /* LaunchScreen.storyboard */,
-				A48C03982B8AE8C900690A10 /* SignInViewController.swift */,
 			);
 			path = ColorBookMarkV2;
 			sourceTree = "<group>";
