@@ -17,6 +17,16 @@
 		A455637E2BA4305D00E5A83C /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A455637C2BA4305D00E5A83C /* UIColorExtension.swift */; };
 		A45563842BA555AC00E5A83C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563832BA555AC00E5A83C /* Coordinator.swift */; };
 		A45563852BA555AC00E5A83C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563832BA555AC00E5A83C /* Coordinator.swift */; };
+		A455638D2BA556AD00E5A83C /* SignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A455638C2BA556AD00E5A83C /* SignInButton.swift */; };
+		A455638E2BA556AD00E5A83C /* SignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A455638C2BA556AD00E5A83C /* SignInButton.swift */; };
+		A45563912BA5576F00E5A83C /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = A45563902BA5576F00E5A83C /* ReactorKit */; };
+		A45563932BA5576F00E5A83C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A45563922BA5576F00E5A83C /* SnapKit */; };
+		A45563952BA5577800E5A83C /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = A45563942BA5577800E5A83C /* ReactorKit */; };
+		A45563972BA5577800E5A83C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A45563962BA5577800E5A83C /* SnapKit */; };
+		A455639A2BA557CA00E5A83C /* StringConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563992BA557CA00E5A83C /* StringConstant.swift */; };
+		A455639B2BA557CA00E5A83C /* StringConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563992BA557CA00E5A83C /* StringConstant.swift */; };
+		A455639E2BA55B9200E5A83C /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = A455639D2BA55B9200E5A83C /* RxCocoa */; };
+		A45563A02BA55B9B00E5A83C /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = A455639F2BA55B9B00E5A83C /* RxCocoa */; };
 		A48C03692B8AE83000690A10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48C03682B8AE83000690A10 /* AppDelegate.swift */; };
 		A48C036B2B8AE83000690A10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48C036A2B8AE83000690A10 /* SceneDelegate.swift */; };
 		A48C03722B8AE83000690A10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A48C03712B8AE83000690A10 /* Assets.xcassets */; };
@@ -56,6 +66,8 @@
 		A45563792BA42CF900E5A83C /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
 		A455637C2BA4305D00E5A83C /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		A45563832BA555AC00E5A83C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		A455638C2BA556AD00E5A83C /* SignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInButton.swift; sourceTree = "<group>"; };
+		A45563992BA557CA00E5A83C /* StringConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstant.swift; sourceTree = "<group>"; };
 		A48C03652B8AE83000690A10 /* ColorBookMarkV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorBookMarkV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A48C03682B8AE83000690A10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A48C036A2B8AE83000690A10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +89,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A45563A02BA55B9B00E5A83C /* RxCocoa in Frameworks */,
+				A45563912BA5576F00E5A83C /* ReactorKit in Frameworks */,
+				A45563932BA5576F00E5A83C /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +113,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A455639E2BA55B9200E5A83C /* RxCocoa in Frameworks */,
+				A45563952BA5577800E5A83C /* ReactorKit in Frameworks */,
+				A45563972BA5577800E5A83C /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +143,7 @@
 		A455637F2BA5556900E5A83C /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				A455638B2BA5568E00E5A83C /* Component */,
 				A45563862BA555F000E5A83C /* SignIn */,
 				A45563812BA5557C00E5A83C /* Common */,
 			);
@@ -163,6 +182,29 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		A455638B2BA5568E00E5A83C /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				A455638C2BA556AD00E5A83C /* SignInButton.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		A455638F2BA5576F00E5A83C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A45563982BA557C200E5A83C /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				A45563992BA557CA00E5A83C /* StringConstant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
 		A48C035C2B8AE83000690A10 = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +212,7 @@
 				A48C037E2B8AE83100690A10 /* ColorBookMarkV2Tests */,
 				A48C03882B8AE83100690A10 /* ColorBookMarkV2UITests */,
 				A48C03662B8AE83000690A10 /* Products */,
+				A455638F2BA5576F00E5A83C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -187,6 +230,7 @@
 		A48C03672B8AE83000690A10 /* ColorBookMarkV2 */ = {
 			isa = PBXGroup;
 			children = (
+				A45563982BA557C200E5A83C /* Constant */,
 				A455637F2BA5556900E5A83C /* Presentation */,
 				A45563782BA42CEB00E5A83C /* Extension */,
 				A45563712BA42C7100E5A83C /* Fonts */,
@@ -249,6 +293,11 @@
 			dependencies = (
 			);
 			name = ColorBookMarkV2;
+			packageProductDependencies = (
+				A45563902BA5576F00E5A83C /* ReactorKit */,
+				A45563922BA5576F00E5A83C /* SnapKit */,
+				A455639F2BA55B9B00E5A83C /* RxCocoa */,
+			);
 			productName = ColorBookMarkV2;
 			productReference = A48C03652B8AE83000690A10 /* ColorBookMarkV2.app */;
 			productType = "com.apple.product-type.application";
@@ -302,6 +351,11 @@
 			dependencies = (
 			);
 			name = Debug;
+			packageProductDependencies = (
+				A45563942BA5577800E5A83C /* ReactorKit */,
+				A45563962BA5577800E5A83C /* SnapKit */,
+				A455639D2BA55B9200E5A83C /* RxCocoa */,
+			);
 			productName = ColorBookMarkV2;
 			productReference = A48C03A82B8AF12500690A10 /* Debug.app */;
 			productType = "com.apple.product-type.application";
@@ -341,6 +395,7 @@
 			packageReferences = (
 				A476CD082BA0966300C93ED9 /* XCRemoteSwiftPackageReference "ReactorKit" */,
 				A476CD092BA096C200C93ED9 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				A455639C2BA55B8400E5A83C /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = A48C03662B8AE83000690A10 /* Products */;
 			projectDirPath = "";
@@ -399,6 +454,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A455639A2BA557CA00E5A83C /* StringConstant.swift in Sources */,
+				A455638D2BA556AD00E5A83C /* SignInButton.swift in Sources */,
 				A48C03692B8AE83000690A10 /* AppDelegate.swift in Sources */,
 				A48C036B2B8AE83000690A10 /* SceneDelegate.swift in Sources */,
 				A45563842BA555AC00E5A83C /* Coordinator.swift in Sources */,
@@ -429,6 +486,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A455639B2BA557CA00E5A83C /* StringConstant.swift in Sources */,
+				A455638E2BA556AD00E5A83C /* SignInButton.swift in Sources */,
 				A48C039E2B8AF12500690A10 /* AppDelegate.swift in Sources */,
 				A48C039F2B8AF12500690A10 /* SceneDelegate.swift in Sources */,
 				A45563852BA555AC00E5A83C /* Coordinator.swift in Sources */,
@@ -831,6 +890,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		A455639C2BA55B8400E5A83C /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.6.0;
+			};
+		};
 		A476CD082BA0966300C93ED9 /* XCRemoteSwiftPackageReference "ReactorKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactorKit/ReactorKit.git";
@@ -848,6 +915,39 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A45563902BA5576F00E5A83C /* ReactorKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A476CD082BA0966300C93ED9 /* XCRemoteSwiftPackageReference "ReactorKit" */;
+			productName = ReactorKit;
+		};
+		A45563922BA5576F00E5A83C /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A476CD092BA096C200C93ED9 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		A45563942BA5577800E5A83C /* ReactorKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A476CD082BA0966300C93ED9 /* XCRemoteSwiftPackageReference "ReactorKit" */;
+			productName = ReactorKit;
+		};
+		A45563962BA5577800E5A83C /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A476CD092BA096C200C93ED9 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		A455639D2BA55B9200E5A83C /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A455639C2BA55B8400E5A83C /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		A455639F2BA55B9B00E5A83C /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A455639C2BA55B8400E5A83C /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A48C035D2B8AE83000690A10 /* Project object */;
 }
