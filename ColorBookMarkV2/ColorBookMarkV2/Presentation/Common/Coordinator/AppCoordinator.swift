@@ -11,7 +11,7 @@ final class AppCoordinator: Coordinator {
     var navigationController: UINavigationController
     var childCoordinators: [Coordinator] = []
     // 테스트용 플래그.
-    private var isSignUp: Bool = true
+    private var isSignUp: Bool = false
     
     init(_ navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -26,7 +26,8 @@ final class AppCoordinator: Coordinator {
     }
     
     func startSignInFlow() {
-
+        let coordinator = SignInCoordinator(navigationController)
+        coordinator.start()
     }
     
     func startMainFlow() {

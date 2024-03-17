@@ -36,7 +36,7 @@ final class SignInViewController: UIViewController {
     }
     
     private func setupLayout() {
-        view.backgroundColor = .systemBackground
+        view.backgroundColor = .red
         stackView.axis = .vertical
         stackView.spacing = 12.0
         stackView.distribution = .equalSpacing

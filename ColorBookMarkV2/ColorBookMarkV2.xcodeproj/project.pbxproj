@@ -33,6 +33,10 @@
 		A45563A92BA595DA00E5A83C /* KakaoSDKAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A45563A82BA595DA00E5A83C /* KakaoSDKAuth */; };
 		A45563AB2BA67FDA00E5A83C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563AA2BA67FDA00E5A83C /* AppCoordinator.swift */; };
 		A45563AC2BA67FDA00E5A83C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563AA2BA67FDA00E5A83C /* AppCoordinator.swift */; };
+		A45563B02BA68C5D00E5A83C /* SignInCoordinatorDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563AF2BA68C5D00E5A83C /* SignInCoordinatorDependencies.swift */; };
+		A45563B12BA68C5D00E5A83C /* SignInCoordinatorDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563AF2BA68C5D00E5A83C /* SignInCoordinatorDependencies.swift */; };
+		A45563B32BA68C7000E5A83C /* SignInCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563B22BA68C7000E5A83C /* SignInCoordinator.swift */; };
+		A45563B42BA68C7000E5A83C /* SignInCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563B22BA68C7000E5A83C /* SignInCoordinator.swift */; };
 		A48C03692B8AE83000690A10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48C03682B8AE83000690A10 /* AppDelegate.swift */; };
 		A48C036B2B8AE83000690A10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48C036A2B8AE83000690A10 /* SceneDelegate.swift */; };
 		A48C03722B8AE83000690A10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A48C03712B8AE83000690A10 /* Assets.xcassets */; };
@@ -75,6 +79,8 @@
 		A455638C2BA556AD00E5A83C /* SignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInButton.swift; sourceTree = "<group>"; };
 		A45563992BA557CA00E5A83C /* StringConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstant.swift; sourceTree = "<group>"; };
 		A45563AA2BA67FDA00E5A83C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		A45563AF2BA68C5D00E5A83C /* SignInCoordinatorDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInCoordinatorDependencies.swift; sourceTree = "<group>"; };
+		A45563B22BA68C7000E5A83C /* SignInCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInCoordinator.swift; sourceTree = "<group>"; };
 		A48C03652B8AE83000690A10 /* ColorBookMarkV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorBookMarkV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A48C03682B8AE83000690A10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A48C036A2B8AE83000690A10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -181,6 +187,7 @@
 		A45563862BA555F000E5A83C /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
+				A45563AD2BA68C0A00E5A83C /* Coordinator */,
 				A45563872BA5560600E5A83C /* View */,
 			);
 			path = SignIn;
@@ -215,6 +222,23 @@
 				A45563992BA557CA00E5A83C /* StringConstant.swift */,
 			);
 			path = Constant;
+			sourceTree = "<group>";
+		};
+		A45563AD2BA68C0A00E5A83C /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				A45563AE2BA68C4700E5A83C /* Protocol */,
+				A45563B22BA68C7000E5A83C /* SignInCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		A45563AE2BA68C4700E5A83C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				A45563AF2BA68C5D00E5A83C /* SignInCoordinatorDependencies.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		A48C035C2B8AE83000690A10 = {
@@ -478,8 +502,10 @@
 				A45563842BA555AC00E5A83C /* Coordinator.swift in Sources */,
 				A455637D2BA4305D00E5A83C /* UIColorExtension.swift in Sources */,
 				A45563AB2BA67FDA00E5A83C /* AppCoordinator.swift in Sources */,
+				A45563B32BA68C7000E5A83C /* SignInCoordinator.swift in Sources */,
 				A455637A2BA42CF900E5A83C /* UIFontExtension.swift in Sources */,
 				A48C03992B8AE8C900690A10 /* SignInViewController.swift in Sources */,
+				A45563B02BA68C5D00E5A83C /* SignInCoordinatorDependencies.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,8 +537,10 @@
 				A45563852BA555AC00E5A83C /* Coordinator.swift in Sources */,
 				A455637E2BA4305D00E5A83C /* UIColorExtension.swift in Sources */,
 				A45563AC2BA67FDA00E5A83C /* AppCoordinator.swift in Sources */,
+				A45563B42BA68C7000E5A83C /* SignInCoordinator.swift in Sources */,
 				A455637B2BA42CF900E5A83C /* UIFontExtension.swift in Sources */,
 				A48C03A02B8AF12500690A10 /* SignInViewController.swift in Sources */,
+				A45563B12BA68C5D00E5A83C /* SignInCoordinatorDependencies.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
