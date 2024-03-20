@@ -10,7 +10,7 @@ import Foundation
 enum MainTabbar: String {
     case calendar
     case record
-    case statistics
+//    case statistics
     case setting
     
     init?(index: Int) {
@@ -19,8 +19,8 @@ enum MainTabbar: String {
             self = .calendar
         case 1:
             self = .record
-        case 2:
-            self = .statistics
+//        case 2:
+//            self = .statistics
         case 3:
             self = .setting
         default:
@@ -35,8 +35,8 @@ enum MainTabbar: String {
             return 0
         case .record:
             return 1
-        case .statistics:
-            return 2
+//        case .statistics:
+//            return 2
         case .setting:
             return 3
         }
@@ -59,8 +59,8 @@ enum MainTabbar: String {
             return StringConstant.calendarTab
         case .record:
             return StringConstant.recordTab
-        case .statistics:
-            return StringConstant.statisticsTab
+//        case .statistics:
+//            return StringConstant.statisticsTab
         case .setting:
             return StringConstant.settingTab
         }

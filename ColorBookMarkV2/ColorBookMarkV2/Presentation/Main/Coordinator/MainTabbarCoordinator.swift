@@ -20,7 +20,7 @@ final class MainTabbarCoordinator: MainTabbarCoordinatorDependencies {
     }
     
     func start() {
-        let tabbars: [MainTabbar] = [.calendar, .record, .statistics, .setting]
+        let tabbars: [MainTabbar] = [.calendar, .record, .setting]
         let controllers = tabbars.map({ createTabbarController(of: $0) })
         configureTabbarController(with: controllers)
     }
@@ -56,6 +56,23 @@ final class MainTabbarCoordinator: MainTabbarCoordinatorDependencies {
         let tabbarItem = UITabBarItem(title: tabbar.title, image: UIImage(named: tabbar.unselectedImageName), tag: tabbar.tabbarTag)
         tabbarItem.selectedImage = UIImage(named: tabbar.selectedImageName)
         return tabbarItem
+    }
+    
+    private func startTabbarCoordinator(of tabbar: MainTabbar, to navigationController: UINavigationController) {
+        switch tabbar {
+        case .calendar:
+            let calendarCoordinator = CaledarTabCoordinator(navigationController)
+            self.childCoordinators = [calendarCoordinator]
+            calendarCoordinator.start()
+        case .record:
+            let calendarCoordinator = CaledarTabCoordinator(navigationController)
+            self.childCoordinators = [calendarCoordinator]
+            calendarCoordinator.start()
+        case .setting:
+            let calendarCoordinator = CaledarTabCoordinator(navigationController)
+            self.childCoordinators = [calendarCoordinator]
+            calendarCoordinator.start()
+        }
     }
     
 }
