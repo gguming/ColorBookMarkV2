@@ -12,7 +12,7 @@ final class CalendarCollectionViewCell: UICollectionViewCell {
     static let identifier: String = "CalendarCollectionViewCell"
     private let dateColorCircleView: UIView = {
         let view = UIView()
-        view.backgroundColor = .gray_03
+        view.backgroundColor = .gray03
         return view
     }()
     
@@ -26,7 +26,7 @@ final class CalendarCollectionViewCell: UICollectionViewCell {
         super.layoutSubviews()
         dateColorCircleView.layer.cornerRadius = (contentView.frame.width) * 0.5
         dateColorCircleView.layer.borderWidth = 1.0
-        dateColorCircleView.layer.borderColor = UIColor.gray_04?.cgColor
+        dateColorCircleView.layer.borderColor = UIColor.gray04.cgColor
         dateColorCircleView.layer.masksToBounds = true
         layoutIfNeeded()
 
