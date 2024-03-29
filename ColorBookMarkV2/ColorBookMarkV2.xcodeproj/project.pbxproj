@@ -73,6 +73,8 @@
 		A45563F42BAFC99100E5A83C /* MonthPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563F22BAFC99100E5A83C /* MonthPickerViewController.swift */; };
 		A45563F72BAFC9F800E5A83C /* SelectMonthDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563F62BAFC9F800E5A83C /* SelectMonthDelegate.swift */; };
 		A45563F82BAFC9F800E5A83C /* SelectMonthDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563F62BAFC9F800E5A83C /* SelectMonthDelegate.swift */; };
+		A45563FB2BB689AF00E5A83C /* SignInReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563FA2BB689AF00E5A83C /* SignInReactor.swift */; };
+		A45563FC2BB689AF00E5A83C /* SignInReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563FA2BB689AF00E5A83C /* SignInReactor.swift */; };
 		A48C03692B8AE83000690A10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48C03682B8AE83000690A10 /* AppDelegate.swift */; };
 		A48C036B2B8AE83000690A10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48C036A2B8AE83000690A10 /* SceneDelegate.swift */; };
 		A48C03722B8AE83000690A10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A48C03712B8AE83000690A10 /* Assets.xcassets */; };
@@ -135,6 +137,7 @@
 		A45563EF2BAFC97A00E5A83C /* MonthPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthPickerView.swift; sourceTree = "<group>"; };
 		A45563F22BAFC99100E5A83C /* MonthPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthPickerViewController.swift; sourceTree = "<group>"; };
 		A45563F62BAFC9F800E5A83C /* SelectMonthDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMonthDelegate.swift; sourceTree = "<group>"; };
+		A45563FA2BB689AF00E5A83C /* SignInReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInReactor.swift; sourceTree = "<group>"; };
 		A48C03652B8AE83000690A10 /* ColorBookMarkV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorBookMarkV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A48C03682B8AE83000690A10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A48C036A2B8AE83000690A10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -245,6 +248,7 @@
 		A45563862BA555F000E5A83C /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
+				A45563F92BB689A500E5A83C /* Reactor */,
 				A45563AD2BA68C0A00E5A83C /* Coordinator */,
 				A45563872BA5560600E5A83C /* View */,
 			);
@@ -415,6 +419,14 @@
 				A45563F62BAFC9F800E5A83C /* SelectMonthDelegate.swift */,
 			);
 			path = Delegate;
+			sourceTree = "<group>";
+		};
+		A45563F92BB689A500E5A83C /* Reactor */ = {
+			isa = PBXGroup;
+			children = (
+				A45563FA2BB689AF00E5A83C /* SignInReactor.swift */,
+			);
+			path = Reactor;
 			sourceTree = "<group>";
 		};
 		A48C035C2B8AE83000690A10 = {
@@ -681,6 +693,7 @@
 				A45563E72BAB1ABA00E5A83C /* SettingTabCellWithSwitchView.swift in Sources */,
 				A45563CF2BA880E700E5A83C /* CaledarTabViewController.swift in Sources */,
 				A455638D2BA556AD00E5A83C /* SignInButton.swift in Sources */,
+				A45563FB2BB689AF00E5A83C /* SignInReactor.swift in Sources */,
 				A45563F02BAFC97A00E5A83C /* MonthPickerView.swift in Sources */,
 				A48C03692B8AE83000690A10 /* AppDelegate.swift in Sources */,
 				A48C036B2B8AE83000690A10 /* SceneDelegate.swift in Sources */,
@@ -734,6 +747,7 @@
 				A45563E82BAB1ABA00E5A83C /* SettingTabCellWithSwitchView.swift in Sources */,
 				A45563D02BA880E700E5A83C /* CaledarTabViewController.swift in Sources */,
 				A455638E2BA556AD00E5A83C /* SignInButton.swift in Sources */,
+				A45563FC2BB689AF00E5A83C /* SignInReactor.swift in Sources */,
 				A45563F12BAFC97A00E5A83C /* MonthPickerView.swift in Sources */,
 				A48C039E2B8AF12500690A10 /* AppDelegate.swift in Sources */,
 				A48C039F2B8AF12500690A10 /* SceneDelegate.swift in Sources */,
