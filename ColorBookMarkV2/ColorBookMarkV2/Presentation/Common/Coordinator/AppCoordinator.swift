@@ -9,9 +9,10 @@ import UIKit
 
 final class AppCoordinator: BaseCoordinator {
     // 테스트용 플래그.
-    private var isSignUp: Bool = true
+    private var isSignUp: Bool = false
     
     override func start() {
+        self.navigationController.delegate = self
         if isSignUp {
             startMainFlow()
         } else {
@@ -21,13 +22,17 @@ final class AppCoordinator: BaseCoordinator {
     
     func startSignInFlow() {
         let coordinator = SignInCoordinator(navigationController: navigationController)
-        coordinator.start()
+        start(childCoordinator: coordinator)
     }
     
     func startMainFlow() {
         let coordinator = MainTabbarCoordinator(navigationController: navigationController)
-        coordinator.start()
+        start(childCoordinator: coordinator)
     }
     
+    
+}
+
+extension AppCoordinator: UINavigationControllerDelegate {
     
 }

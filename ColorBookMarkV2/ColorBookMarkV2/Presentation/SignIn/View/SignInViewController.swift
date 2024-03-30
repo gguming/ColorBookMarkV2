@@ -10,10 +10,8 @@ import RxSwift
 import RxCocoa
 import ReactorKit
 
-final class SignInViewController: UIViewController, View {
+final class SignInViewController: BaseViewController, View {
 
-    var disposeBag = DisposeBag()
-    
     private var logoImageView: UIImageView = {
         let image = UIImage(named: "logoImage")
         let imageView = UIImageView(image: image)

@@ -28,6 +28,30 @@ final class SignInReactor: Reactor {
         /// 애플 로그인 클릭
         case didTappedAppleButton
     }
+    
+    enum Mutation {
+        case showNicknameInputView(Bool)
+    }
+    
+    func mutate(action: Action) -> Observable<Mutation> {
+        switch action {
+        case .didTappedKakaoButton:
+            Observable.just(Mutation.showNicknameInputView(true))
+            
+        case .didTappedAppleButton:
+            Observable.just(Mutation.showNicknameInputView(true))
+        }
+    }
+    
+    func reduce(state: State, mutation: Mutation) -> State {
+        var newState = state
+        switch mutation {
+        case .showNicknameInputView(let state):
+            newState.isShowNicknameInputView = state
+        }
+        
+        return newState
+    }
 
 }
 

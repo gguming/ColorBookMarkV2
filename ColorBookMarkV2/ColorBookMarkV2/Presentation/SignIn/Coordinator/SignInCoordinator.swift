@@ -13,19 +13,21 @@ final class SignInCoordinator: BaseCoordinator {
         let signInViewController = SignInViewController()
         let reactor = SignInReactor(initialState: .init())
         signInViewController.reactor = reactor
-        self.navigationController.viewControllers = [signInViewController]
-        
+        signInViewController.coordinator = self
         self.bind(reactor)
         
+        self.navigationController.setViewControllers([signInViewController], animated: true)
     }
     
     func bind(_ reactor: SignInReactor) {
         reactor.state
             .map({ $0.isShowNicknameInputView })
-            .distinctUntilChanged()
+            .filter { $0 }
             .withUnretained(self)
             .bind { (coordinator, _) in
-                // TODO: 닉네임 입력 화면으로 연결해야함
+                let nickNameInputCoordinator = NicknameInputCoordinator(navigationController: coordinator.navigationController)
+                nickNameInputCoordinator.start(childCoordinator: nickNameInputCoordinator)
+                
             }
             .disposed(by: disposeBag)
     }
