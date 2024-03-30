@@ -75,6 +75,10 @@
 		A45563F82BAFC9F800E5A83C /* SelectMonthDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563F62BAFC9F800E5A83C /* SelectMonthDelegate.swift */; };
 		A45563FB2BB689AF00E5A83C /* SignInReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563FA2BB689AF00E5A83C /* SignInReactor.swift */; };
 		A45563FC2BB689AF00E5A83C /* SignInReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563FA2BB689AF00E5A83C /* SignInReactor.swift */; };
+		A45563FE2BB8064900E5A83C /* NicknameInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563FD2BB8064900E5A83C /* NicknameInputViewController.swift */; };
+		A45563FF2BB8064900E5A83C /* NicknameInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563FD2BB8064900E5A83C /* NicknameInputViewController.swift */; };
+		A45564012BB8067600E5A83C /* NicknameInputReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45564002BB8067600E5A83C /* NicknameInputReactor.swift */; };
+		A45564022BB8067600E5A83C /* NicknameInputReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45564002BB8067600E5A83C /* NicknameInputReactor.swift */; };
 		A48C03692B8AE83000690A10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48C03682B8AE83000690A10 /* AppDelegate.swift */; };
 		A48C036B2B8AE83000690A10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48C036A2B8AE83000690A10 /* SceneDelegate.swift */; };
 		A48C03722B8AE83000690A10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A48C03712B8AE83000690A10 /* Assets.xcassets */; };
@@ -138,6 +142,8 @@
 		A45563F22BAFC99100E5A83C /* MonthPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthPickerViewController.swift; sourceTree = "<group>"; };
 		A45563F62BAFC9F800E5A83C /* SelectMonthDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMonthDelegate.swift; sourceTree = "<group>"; };
 		A45563FA2BB689AF00E5A83C /* SignInReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInReactor.swift; sourceTree = "<group>"; };
+		A45563FD2BB8064900E5A83C /* NicknameInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameInputViewController.swift; sourceTree = "<group>"; };
+		A45564002BB8067600E5A83C /* NicknameInputReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameInputReactor.swift; sourceTree = "<group>"; };
 		A48C03652B8AE83000690A10 /* ColorBookMarkV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorBookMarkV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A48C03682B8AE83000690A10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A48C036A2B8AE83000690A10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -259,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				A48C03982B8AE8C900690A10 /* SignInViewController.swift */,
+				A45563FD2BB8064900E5A83C /* NicknameInputViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -425,6 +432,7 @@
 			isa = PBXGroup;
 			children = (
 				A45563FA2BB689AF00E5A83C /* SignInReactor.swift */,
+				A45564002BB8067600E5A83C /* NicknameInputReactor.swift */,
 			);
 			path = Reactor;
 			sourceTree = "<group>";
@@ -690,6 +698,7 @@
 				A455639A2BA557CA00E5A83C /* StringConstant.swift in Sources */,
 				A45563C02BA6978700E5A83C /* BaseTabbarController.swift in Sources */,
 				A45563C92BA69A8500E5A83C /* MainTabbarCoordinator.swift in Sources */,
+				A45563FE2BB8064900E5A83C /* NicknameInputViewController.swift in Sources */,
 				A45563E72BAB1ABA00E5A83C /* SettingTabCellWithSwitchView.swift in Sources */,
 				A45563CF2BA880E700E5A83C /* CaledarTabViewController.swift in Sources */,
 				A455638D2BA556AD00E5A83C /* SignInButton.swift in Sources */,
@@ -709,6 +718,7 @@
 				A45563DD2BAB180C00E5A83C /* CaledarTabCoordinator.swift in Sources */,
 				A455637A2BA42CF900E5A83C /* UIFontExtension.swift in Sources */,
 				A48C03992B8AE8C900690A10 /* SignInViewController.swift in Sources */,
+				A45564012BB8067600E5A83C /* NicknameInputReactor.swift in Sources */,
 				A45563EA2BAB1B1D00E5A83C /* SettingTabCellView.swift in Sources */,
 				A45563F72BAFC9F800E5A83C /* SelectMonthDelegate.swift in Sources */,
 				A45563B02BA68C5D00E5A83C /* SignInCoordinatorDependencies.swift in Sources */,
@@ -744,6 +754,7 @@
 				A455639B2BA557CA00E5A83C /* StringConstant.swift in Sources */,
 				A45563C12BA6978700E5A83C /* BaseTabbarController.swift in Sources */,
 				A45563CA2BA69A8500E5A83C /* MainTabbarCoordinator.swift in Sources */,
+				A45563FF2BB8064900E5A83C /* NicknameInputViewController.swift in Sources */,
 				A45563E82BAB1ABA00E5A83C /* SettingTabCellWithSwitchView.swift in Sources */,
 				A45563D02BA880E700E5A83C /* CaledarTabViewController.swift in Sources */,
 				A455638E2BA556AD00E5A83C /* SignInButton.swift in Sources */,
@@ -763,6 +774,7 @@
 				A45563DE2BAB180C00E5A83C /* CaledarTabCoordinator.swift in Sources */,
 				A455637B2BA42CF900E5A83C /* UIFontExtension.swift in Sources */,
 				A48C03A02B8AF12500690A10 /* SignInViewController.swift in Sources */,
+				A45564022BB8067600E5A83C /* NicknameInputReactor.swift in Sources */,
 				A45563EB2BAB1B1D00E5A83C /* SettingTabCellView.swift in Sources */,
 				A45563F82BAFC9F800E5A83C /* SelectMonthDelegate.swift in Sources */,
 				A45563B12BA68C5D00E5A83C /* SignInCoordinatorDependencies.swift in Sources */,
