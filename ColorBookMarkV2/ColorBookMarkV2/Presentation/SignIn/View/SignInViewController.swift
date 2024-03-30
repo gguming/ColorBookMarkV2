@@ -12,7 +12,7 @@ import ReactorKit
 
 final class SignInViewController: UIViewController, View {
 
-    private var disposeBag = DisposeBag()
+    var disposeBag = DisposeBag()
     
     private var logoImageView: UIImageView = {
         let image = UIImage(named: "logoImage")

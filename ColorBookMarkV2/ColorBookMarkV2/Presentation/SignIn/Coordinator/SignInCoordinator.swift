@@ -6,10 +6,12 @@
 //
 
 import UIKit
+import RxSwift
 
 final class SignInCoordinator: SignInCoordinatorDependencies {
     var navigationController: UINavigationController
     var childCoordinators: [Coordinator] = []
+    private let disposeBag: DisposeBag = DisposeBag()
     
     init(_ navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -17,6 +19,22 @@ final class SignInCoordinator: SignInCoordinatorDependencies {
     
     func start() {
         let signInViewController = SignInViewController()
+        let reactor = SignInReactor(initialState: .init())
+        signInViewController.reactor = reactor
         self.navigationController.viewControllers = [signInViewController]
+        
+        self.bind(reactor)
+        
+    }
+    
+    func bind(_ reactor: SignInReactor) {
+        reactor.state
+            .map({ $0.isShowNicknameInputView })
+            .distinctUntilChanged()
+            .withUnretained(self)
+            .bind { (coordinator, _) in
+                // TODO: 닉네임 입력 화면으로 연결해야함
+            }
+            .disposed(by: disposeBag)
     }
 }
