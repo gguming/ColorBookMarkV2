@@ -33,14 +33,10 @@
 		A45563A92BA595DA00E5A83C /* KakaoSDKAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A45563A82BA595DA00E5A83C /* KakaoSDKAuth */; };
 		A45563AB2BA67FDA00E5A83C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563AA2BA67FDA00E5A83C /* AppCoordinator.swift */; };
 		A45563AC2BA67FDA00E5A83C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563AA2BA67FDA00E5A83C /* AppCoordinator.swift */; };
-		A45563B02BA68C5D00E5A83C /* SignInCoordinatorDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563AF2BA68C5D00E5A83C /* SignInCoordinatorDependencies.swift */; };
-		A45563B12BA68C5D00E5A83C /* SignInCoordinatorDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563AF2BA68C5D00E5A83C /* SignInCoordinatorDependencies.swift */; };
 		A45563B32BA68C7000E5A83C /* SignInCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563B22BA68C7000E5A83C /* SignInCoordinator.swift */; };
 		A45563B42BA68C7000E5A83C /* SignInCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563B22BA68C7000E5A83C /* SignInCoordinator.swift */; };
 		A45563BA2BA696C800E5A83C /* MainTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563B92BA696C800E5A83C /* MainTabbar.swift */; };
 		A45563BB2BA696C800E5A83C /* MainTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563B92BA696C800E5A83C /* MainTabbar.swift */; };
-		A45563BD2BA696E100E5A83C /* MainTabbarCoordinatorDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563BC2BA696E100E5A83C /* MainTabbarCoordinatorDependencies.swift */; };
-		A45563BE2BA696E100E5A83C /* MainTabbarCoordinatorDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563BC2BA696E100E5A83C /* MainTabbarCoordinatorDependencies.swift */; };
 		A45563C02BA6978700E5A83C /* BaseTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563BF2BA6978700E5A83C /* BaseTabbarController.swift */; };
 		A45563C12BA6978700E5A83C /* BaseTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563BF2BA6978700E5A83C /* BaseTabbarController.swift */; };
 		A45563C32BA697C000E5A83C /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563C22BA697C000E5A83C /* CALayerExtension.swift */; };
@@ -55,8 +51,6 @@
 		A45563D32BAB130300E5A83C /* CalendarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563D12BAB130300E5A83C /* CalendarCollectionViewCell.swift */; };
 		A45563D52BAB131E00E5A83C /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563D42BAB131E00E5A83C /* DateExtension.swift */; };
 		A45563D62BAB131E00E5A83C /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563D42BAB131E00E5A83C /* DateExtension.swift */; };
-		A45563DA2BAB17F000E5A83C /* CalendarTabCoordinatorDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563D92BAB17F000E5A83C /* CalendarTabCoordinatorDependencies.swift */; };
-		A45563DB2BAB17F000E5A83C /* CalendarTabCoordinatorDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563D92BAB17F000E5A83C /* CalendarTabCoordinatorDependencies.swift */; };
 		A45563DD2BAB180C00E5A83C /* CaledarTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563DC2BAB180C00E5A83C /* CaledarTabCoordinator.swift */; };
 		A45563DE2BAB180C00E5A83C /* CaledarTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563DC2BAB180C00E5A83C /* CaledarTabCoordinator.swift */; };
 		A45563E42BAB1A8100E5A83C /* SettingTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563E32BAB1A8100E5A83C /* SettingTabViewController.swift */; };
@@ -79,6 +73,8 @@
 		A45563FF2BB8064900E5A83C /* NicknameInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45563FD2BB8064900E5A83C /* NicknameInputViewController.swift */; };
 		A45564012BB8067600E5A83C /* NicknameInputReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45564002BB8067600E5A83C /* NicknameInputReactor.swift */; };
 		A45564022BB8067600E5A83C /* NicknameInputReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45564002BB8067600E5A83C /* NicknameInputReactor.swift */; };
+		A45564042BB84E1300E5A83C /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45564032BB84E1300E5A83C /* BaseCoordinator.swift */; };
+		A45564052BB84E1300E5A83C /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45564032BB84E1300E5A83C /* BaseCoordinator.swift */; };
 		A48C03692B8AE83000690A10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48C03682B8AE83000690A10 /* AppDelegate.swift */; };
 		A48C036B2B8AE83000690A10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48C036A2B8AE83000690A10 /* SceneDelegate.swift */; };
 		A48C03722B8AE83000690A10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A48C03712B8AE83000690A10 /* Assets.xcassets */; };
@@ -144,6 +140,7 @@
 		A45563FA2BB689AF00E5A83C /* SignInReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInReactor.swift; sourceTree = "<group>"; };
 		A45563FD2BB8064900E5A83C /* NicknameInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameInputViewController.swift; sourceTree = "<group>"; };
 		A45564002BB8067600E5A83C /* NicknameInputReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameInputReactor.swift; sourceTree = "<group>"; };
+		A45564032BB84E1300E5A83C /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		A48C03652B8AE83000690A10 /* ColorBookMarkV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorBookMarkV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A48C03682B8AE83000690A10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A48C036A2B8AE83000690A10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -247,6 +244,7 @@
 			children = (
 				A45563832BA555AC00E5A83C /* Coordinator.swift */,
 				A45563AA2BA67FDA00E5A83C /* AppCoordinator.swift */,
+				A45564032BB84E1300E5A83C /* BaseCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -707,7 +705,6 @@
 				A48C03692B8AE83000690A10 /* AppDelegate.swift in Sources */,
 				A48C036B2B8AE83000690A10 /* SceneDelegate.swift in Sources */,
 				A45563F32BAFC99100E5A83C /* MonthPickerViewController.swift in Sources */,
-				A45563DA2BAB17F000E5A83C /* CalendarTabCoordinatorDependencies.swift in Sources */,
 				A45563842BA555AC00E5A83C /* Coordinator.swift in Sources */,
 				A45563ED2BAB1B3D00E5A83C /* UserNameCellView.swift in Sources */,
 				A45563D22BAB130300E5A83C /* CalendarCollectionViewCell.swift in Sources */,
@@ -721,8 +718,7 @@
 				A45564012BB8067600E5A83C /* NicknameInputReactor.swift in Sources */,
 				A45563EA2BAB1B1D00E5A83C /* SettingTabCellView.swift in Sources */,
 				A45563F72BAFC9F800E5A83C /* SelectMonthDelegate.swift in Sources */,
-				A45563B02BA68C5D00E5A83C /* SignInCoordinatorDependencies.swift in Sources */,
-				A45563BD2BA696E100E5A83C /* MainTabbarCoordinatorDependencies.swift in Sources */,
+				A45564042BB84E1300E5A83C /* BaseCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -763,7 +759,6 @@
 				A48C039E2B8AF12500690A10 /* AppDelegate.swift in Sources */,
 				A48C039F2B8AF12500690A10 /* SceneDelegate.swift in Sources */,
 				A45563F42BAFC99100E5A83C /* MonthPickerViewController.swift in Sources */,
-				A45563DB2BAB17F000E5A83C /* CalendarTabCoordinatorDependencies.swift in Sources */,
 				A45563852BA555AC00E5A83C /* Coordinator.swift in Sources */,
 				A45563EE2BAB1B3D00E5A83C /* UserNameCellView.swift in Sources */,
 				A45563D32BAB130300E5A83C /* CalendarCollectionViewCell.swift in Sources */,
@@ -777,8 +772,7 @@
 				A45564022BB8067600E5A83C /* NicknameInputReactor.swift in Sources */,
 				A45563EB2BAB1B1D00E5A83C /* SettingTabCellView.swift in Sources */,
 				A45563F82BAFC9F800E5A83C /* SelectMonthDelegate.swift in Sources */,
-				A45563B12BA68C5D00E5A83C /* SignInCoordinatorDependencies.swift in Sources */,
-				A45563BE2BA696E100E5A83C /* MainTabbarCoordinatorDependencies.swift in Sources */,
+				A45564052BB84E1300E5A83C /* BaseCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

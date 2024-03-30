@@ -5,13 +5,28 @@
 //  Created by SUN on 3/16/24.
 //
 
-import Foundation
 import UIKit
 
-protocol Coordinator {
-    var navigationController: UINavigationController { get set }
-    var childCoordinators: [Coordinator] { get set }
-    func start()
+protocol Coordinator: AnyObject {
+
+  var navigationController: UINavigationController { get set }
+  var childCoordinators: [any Coordinator] { get set }
+  var parentCoordinator: Coordinator? { get set }
+
+  func start()
+  func start(childCoordinator: some Coordinator)
+  func finish(childCoordinator: some Coordinator)
 }
 
+extension Coordinator {
+  func start(childCoordinator: some Coordinator) {
+    self.childCoordinators.append(childCoordinator)
+    childCoordinator.parentCoordinator = self
+    childCoordinator.start()
+  }
+
+  func finish(childCoordinator: some Coordinator) {
+    childCoordinators = childCoordinators.filter { $0 !== childCoordinator }
+  }
+}
 

@@ -8,5 +8,5 @@
 import Foundation
 
 protocol SignInCoordinatorDependencies: Coordinator {
-
+    func moveToNicknameInputView()
 }

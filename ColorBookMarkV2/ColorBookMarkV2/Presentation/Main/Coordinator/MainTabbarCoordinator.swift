@@ -7,19 +7,12 @@
 
 import UIKit
 
-final class MainTabbarCoordinator: MainTabbarCoordinatorDependencies {
-    var tabBarController: BaseTabbarController
-    var navigationController: UINavigationController
-    var childCoordinators: [Coordinator] = []
-    
-    init(_ navigationController: UINavigationController) {
-        self.navigationController = navigationController
-        self.navigationController.setNavigationBarHidden(true, animated: true)
-        self.navigationController.isNavigationBarHidden = true
-        self.tabBarController = BaseTabbarController()
-    }
-    
-    func start() {
+final class MainTabbarCoordinator: BaseCoordinator {
+    var tabBarController: BaseTabbarController = BaseTabbarController()
+
+    override func start() {
+        navigationController.setNavigationBarHidden(true, animated: true)
+        navigationController.isNavigationBarHidden = true
         let tabbars: [MainTabbar] = [.calendar, .record, .setting]
         let controllers = tabbars.map({ createTabbarController(of: $0) })
         configureTabbarController(with: controllers)
@@ -61,15 +54,15 @@ final class MainTabbarCoordinator: MainTabbarCoordinatorDependencies {
     private func startTabbarCoordinator(of tabbar: MainTabbar, to navigationController: UINavigationController) {
         switch tabbar {
         case .calendar:
-            let calendarCoordinator = CaledarTabCoordinator(navigationController)
+            let calendarCoordinator = CaledarTabCoordinator(navigationController: navigationController)
             self.childCoordinators = [calendarCoordinator]
             calendarCoordinator.start()
         case .record:
-            let calendarCoordinator = CaledarTabCoordinator(navigationController)
+            let calendarCoordinator = CaledarTabCoordinator(navigationController: navigationController)
             self.childCoordinators = [calendarCoordinator]
             calendarCoordinator.start()
         case .setting:
-            let calendarCoordinator = CaledarTabCoordinator(navigationController)
+            let calendarCoordinator = CaledarTabCoordinator(navigationController: navigationController)
             self.childCoordinators = [calendarCoordinator]
             calendarCoordinator.start()
         }

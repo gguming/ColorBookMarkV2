@@ -7,17 +7,11 @@
 
 import UIKit
 
-final class AppCoordinator: Coordinator {
-    var navigationController: UINavigationController
-    var childCoordinators: [Coordinator] = []
+final class AppCoordinator: BaseCoordinator {
     // 테스트용 플래그.
     private var isSignUp: Bool = true
     
-    init(_ navigationController: UINavigationController) {
-        self.navigationController = navigationController
-    }
-    
-    func start() {
+    override func start() {
         if isSignUp {
             startMainFlow()
         } else {
@@ -26,12 +20,12 @@ final class AppCoordinator: Coordinator {
     }
     
     func startSignInFlow() {
-        let coordinator = SignInCoordinator(navigationController)
+        let coordinator = SignInCoordinator(navigationController: navigationController)
         coordinator.start()
     }
     
     func startMainFlow() {
-        let coordinator = MainTabbarCoordinator(navigationController)
+        let coordinator = MainTabbarCoordinator(navigationController: navigationController)
         coordinator.start()
     }
     

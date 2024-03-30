@@ -8,17 +8,10 @@
 
 import UIKit
 
-final class CaledarTabCoordinator: CalendarTabCoordinatorDependencies {
-    var navigationController: UINavigationController
-    var caledarTabViewController: CaledarTabViewController
-    var childCoordinators: [Coordinator] = []
+final class CaledarTabCoordinator: BaseCoordinator {
     
-    init(_ navigationController: UINavigationController) {
-        self.navigationController = navigationController
-        self.caledarTabViewController = CaledarTabViewController()
-    }
-    
-    func start() {
+    override func start() {
+        let caledarTabViewController = CaledarTabViewController()
         self.navigationController.pushViewController(caledarTabViewController, animated: true)
     }
 }

@@ -8,16 +8,8 @@
 import UIKit
 import RxSwift
 
-final class SignInCoordinator: SignInCoordinatorDependencies {
-    var navigationController: UINavigationController
-    var childCoordinators: [Coordinator] = []
-    private let disposeBag: DisposeBag = DisposeBag()
-    
-    init(_ navigationController: UINavigationController) {
-        self.navigationController = navigationController
-    }
-    
-    func start() {
+final class SignInCoordinator: BaseCoordinator {
+    override func start() {
         let signInViewController = SignInViewController()
         let reactor = SignInReactor(initialState: .init())
         signInViewController.reactor = reactor
