@@ -8,9 +8,11 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import ReactorKit
 
-final class SignInViewController: UIViewController {
-    private let disposeBag = DisposeBag()
+final class SignInViewController: UIViewController, View {
+
+    private var disposeBag = DisposeBag()
     
     private var logoImageView: UIImageView = {
         let image = UIImage(named: "logoImage")
@@ -71,13 +73,11 @@ final class SignInViewController: UIViewController {
         signInEmailButton.snp.makeConstraints({
             $0.horizontalEdges.equalToSuperview()
             $0.height.equalTo(48.0)
-//            $0.bottom.equalTo(view.safeAreaLayoutGuide).inset(24.0)
         })
-//
+
         signInAppleButton.snp.makeConstraints({
             $0.horizontalEdges.equalToSuperview()
             $0.height.equalTo(48.0)
-//            $0.bottom.equalTo(view.safeAreaLayoutGuide).inset(24.0)
         })
 
         signInKakaoButton.snp.makeConstraints({
@@ -86,4 +86,17 @@ final class SignInViewController: UIViewController {
         })
     }
     
+    func bind(reactor: SignInReactor) {
+        // MARK: Action
+        signInKakaoButton.rx.tap
+            .map({ SignInReactor.Action.didTappedKakaoButton })
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        
+        signInAppleButton.rx.tap
+            .map({ SignInReactor.Action.didTappedAppleButton })
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        
+    }
 }

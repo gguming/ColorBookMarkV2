@@ -10,14 +10,13 @@ import UIKit
 final class SignInCoordinator: SignInCoordinatorDependencies {
     var navigationController: UINavigationController
     var childCoordinators: [Coordinator] = []
-    private var signInViewController: SignInViewController
     
     init(_ navigationController: UINavigationController) {
         self.navigationController = navigationController
-        self.signInViewController = SignInViewController()
     }
     
     func start() {
+        let signInViewController = SignInViewController()
         self.navigationController.viewControllers = [signInViewController]
     }
 }
