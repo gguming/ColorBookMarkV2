@@ -79,6 +79,10 @@
 		A45564082BB8544B00E5A83C /* NicknameInputCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45564062BB8544B00E5A83C /* NicknameInputCoordinator.swift */; };
 		A455640A2BB85DA800E5A83C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45564092BB85DA800E5A83C /* BaseViewController.swift */; };
 		A455640B2BB85DA800E5A83C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45564092BB85DA800E5A83C /* BaseViewController.swift */; };
+		A455640D2BB9399700E5A83C /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A455640C2BB9399700E5A83C /* CustomTextField.swift */; };
+		A455640E2BB9399700E5A83C /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A455640C2BB9399700E5A83C /* CustomTextField.swift */; };
+		A45564102BB939DC00E5A83C /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A455640F2BB939DC00E5A83C /* UITextFieldExtension.swift */; };
+		A45564112BB939DC00E5A83C /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A455640F2BB939DC00E5A83C /* UITextFieldExtension.swift */; };
 		A48C03692B8AE83000690A10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48C03682B8AE83000690A10 /* AppDelegate.swift */; };
 		A48C036B2B8AE83000690A10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48C036A2B8AE83000690A10 /* SceneDelegate.swift */; };
 		A48C03722B8AE83000690A10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A48C03712B8AE83000690A10 /* Assets.xcassets */; };
@@ -147,6 +151,8 @@
 		A45564032BB84E1300E5A83C /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		A45564062BB8544B00E5A83C /* NicknameInputCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameInputCoordinator.swift; sourceTree = "<group>"; };
 		A45564092BB85DA800E5A83C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		A455640C2BB9399700E5A83C /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		A455640F2BB939DC00E5A83C /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 		A48C03652B8AE83000690A10 /* ColorBookMarkV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorBookMarkV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A48C03682B8AE83000690A10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A48C036A2B8AE83000690A10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -222,6 +228,7 @@
 				A45563C22BA697C000E5A83C /* CALayerExtension.swift */,
 				A45563C52BA697F000E5A83C /* UITabBarExtension.swift */,
 				A45563D42BAB131E00E5A83C /* DateExtension.swift */,
+				A455640F2BB939DC00E5A83C /* UITextFieldExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -282,6 +289,7 @@
 				A45563E62BAB1ABA00E5A83C /* SettingTabCellWithSwitchView.swift */,
 				A45563E92BAB1B1D00E5A83C /* SettingTabCellView.swift */,
 				A45563EC2BAB1B3D00E5A83C /* UserNameCellView.swift */,
+				A455640C2BB9399700E5A83C /* CustomTextField.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -702,6 +710,7 @@
 				A45563D52BAB131E00E5A83C /* DateExtension.swift in Sources */,
 				A45563BA2BA696C800E5A83C /* MainTabbar.swift in Sources */,
 				A455639A2BA557CA00E5A83C /* StringConstant.swift in Sources */,
+				A45564102BB939DC00E5A83C /* UITextFieldExtension.swift in Sources */,
 				A45563C02BA6978700E5A83C /* BaseTabbarController.swift in Sources */,
 				A45563C92BA69A8500E5A83C /* MainTabbarCoordinator.swift in Sources */,
 				A45563FE2BB8064900E5A83C /* NicknameInputViewController.swift in Sources */,
@@ -720,6 +729,7 @@
 				A455637D2BA4305D00E5A83C /* UIColorExtension.swift in Sources */,
 				A45563C62BA697F000E5A83C /* UITabBarExtension.swift in Sources */,
 				A45564072BB8544B00E5A83C /* NicknameInputCoordinator.swift in Sources */,
+				A455640D2BB9399700E5A83C /* CustomTextField.swift in Sources */,
 				A45563AB2BA67FDA00E5A83C /* AppCoordinator.swift in Sources */,
 				A45563B32BA68C7000E5A83C /* SignInCoordinator.swift in Sources */,
 				A45563DD2BAB180C00E5A83C /* CaledarTabCoordinator.swift in Sources */,
@@ -758,6 +768,7 @@
 				A45563D62BAB131E00E5A83C /* DateExtension.swift in Sources */,
 				A45563BB2BA696C800E5A83C /* MainTabbar.swift in Sources */,
 				A455639B2BA557CA00E5A83C /* StringConstant.swift in Sources */,
+				A45564112BB939DC00E5A83C /* UITextFieldExtension.swift in Sources */,
 				A45563C12BA6978700E5A83C /* BaseTabbarController.swift in Sources */,
 				A45563CA2BA69A8500E5A83C /* MainTabbarCoordinator.swift in Sources */,
 				A45563FF2BB8064900E5A83C /* NicknameInputViewController.swift in Sources */,
@@ -776,6 +787,7 @@
 				A455637E2BA4305D00E5A83C /* UIColorExtension.swift in Sources */,
 				A45563C72BA697F000E5A83C /* UITabBarExtension.swift in Sources */,
 				A45564082BB8544B00E5A83C /* NicknameInputCoordinator.swift in Sources */,
+				A455640E2BB9399700E5A83C /* CustomTextField.swift in Sources */,
 				A45563AC2BA67FDA00E5A83C /* AppCoordinator.swift in Sources */,
 				A45563B42BA68C7000E5A83C /* SignInCoordinator.swift in Sources */,
 				A45563DE2BAB180C00E5A83C /* CaledarTabCoordinator.swift in Sources */,
