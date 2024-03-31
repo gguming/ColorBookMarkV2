@@ -44,14 +44,11 @@ final class SignInButton: UIButton {
 enum SignInType {
     case kakao
     case apple
-    case email
     
     var textColor: UIColor? {
         switch self {
         case .kakao, .apple:
             return .txtPrimary
-        case .email:
-            return .white
         }
     }
     
@@ -61,8 +58,6 @@ enum SignInType {
             return .kakaoBackground
         case .apple:
             return .appleBackground
-        case .email:
-            return .emailBackground
         }
     }
     
@@ -72,8 +67,6 @@ enum SignInType {
             return StringConstant.signInWithKakao
         case .apple:
             return StringConstant.signInWithApple
-        case .email:
-            return StringConstant.signInWithEmail
         }
     }
     
@@ -83,8 +76,6 @@ enum SignInType {
             return UIImage(named: "kakaoImage")
         case .apple:
             return UIImage(named: "appleImage")
-        case .email:
-            return UIImage(named: "emailImage")
         }
     }
 }

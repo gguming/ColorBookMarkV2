@@ -28,7 +28,6 @@ final class SignInViewController: BaseViewController, View {
     private let stackView: UIStackView = UIStackView()
     private let signInKakaoButton: SignInButton = SignInButton(signInType: .kakao)
     private let signInAppleButton: SignInButton = SignInButton(signInType: .apple)
-    private let signInEmailButton: SignInButton = SignInButton(signInType: .email)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,8 +44,7 @@ final class SignInViewController: BaseViewController, View {
             .forEach({ view.addSubview($0) })
         
         [signInKakaoButton,
-         signInAppleButton,
-         signInEmailButton]
+         signInAppleButton]
             .forEach({ stackView.addArrangedSubview($0) })
         
         
@@ -66,11 +64,6 @@ final class SignInViewController: BaseViewController, View {
         stackView.snp.makeConstraints({
             $0.horizontalEdges.equalToSuperview().inset(16.0)
             $0.bottom.equalTo(view.safeAreaLayoutGuide).inset(24.0)
-        })
-        
-        signInEmailButton.snp.makeConstraints({
-            $0.horizontalEdges.equalToSuperview()
-            $0.height.equalTo(48.0)
         })
 
         signInAppleButton.snp.makeConstraints({
