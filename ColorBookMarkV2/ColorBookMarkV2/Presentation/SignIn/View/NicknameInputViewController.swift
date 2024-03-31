@@ -9,8 +9,7 @@ import UIKit
 import ReactorKit
 import RxSwift
 
-final class NicknameInputViewController: UIViewController, View {
-    var disposeBag: DisposeBag = DisposeBag()
+final class NicknameInputViewController: BaseViewController, View {
     
     func bind(reactor: NicknameInputReactor) {
         // TODO: 컴포넌트 구성 후 reactor 연결
